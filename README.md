@@ -54,6 +54,73 @@ In order to ensure that the Laravel community is welcoming to all, please review
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-## License
+# Sistema de Gestión de Proveedores
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Aplicación web desarrollada con Laravel para la gestión de proveedores.
+
+## Características
+
+- ✅ CRUD completo de proveedores
+- ✅ Listado de proveedores
+- ✅ Crear, editar y eliminar proveedores
+- ✅ Visualización de detalles de cada proveedor
+- ✅ Interfaz responsive con Bootstrap
+
+## Requisitos
+
+- PHP >= 8.2
+- Composer
+- SQLite (o MySQL/PostgreSQL)
+- Node.js y NPM (opcional, para assets)
+
+## Instalación
+
+1. Clona este repositorio:
+```bash
+git clone [URL-DE-TU-REPOSITORIO]
+cd proveedores-app
+```
+
+2. Instala las dependencias de PHP:
+```bash
+composer install
+```
+
+3. Copia el archivo de configuración:
+```bash
+copy .env.example .env
+```
+
+4. Genera la clave de la aplicación:
+```bash
+php artisan key:generate
+```
+
+5. Configura tu base de datos en el archivo `.env`
+
+6. Ejecuta las migraciones:
+```bash
+php artisan migrate
+```
+
+7. Inicia el servidor de desarrollo:
+```bash
+php artisan serve
+```
+
+8. Abre tu navegador en `http://localhost:8000`
+
+## Uso
+
+Accede a `/proveedores` para gestionar los proveedores del sistema.
+
+## Estructura del Proyecto
+
+- `app/Models/Proveedor.php` - Modelo de Proveedor
+- `app/Http/Controllers/ProveedorController.php` - Controlador CRUD
+- `resources/views/proveedores/` - Vistas de la aplicación
+- `database/migrations/` - Migraciones de la base de datos
+
+## Licencia
+
+Este proyecto es de código abierto bajo la licencia MIT.
